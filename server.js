@@ -17,6 +17,9 @@ app.post("/", async (req, res) => {
         port: 587,
         secure: false, //true for 465, false for other ports
         // service: "Gmail",
+        logger: true,
+        debug: true,
+        secureConnection: false,
         auth: {
           user: "welcometeam@erinskyekelly.com", // generated ethereal user
           pass: "Welcome2021!!!", // generated ethereal password
