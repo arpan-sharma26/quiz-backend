@@ -13,10 +13,10 @@ app.post("/", async (req, res) => {
     // let testAccount = await nodemailer.createTestAccount();
 
     let transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
+        // host: "smtp.ethereal.email",
         // port: 587,
         // secure: false, // true for 465, false for other ports
-        // service: "Gmail",
+        service: "Gmail",
         auth: {
           user: "arpan.sharma26@gmail.com", // generated ethereal user
           pass: "ywinqbpicsrybpgb", // generated ethereal password
