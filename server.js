@@ -13,21 +13,20 @@ app.post("/", async (req, res) => {
     // let testAccount = await nodemailer.createTestAccount();
 
     let transporter = nodemailer.createTransport({
-        host: "smtp-coby.ns.cloudflare.com",
-        port: 587,
-        secure: false, //true for 465, false for other ports
+        host: "coby.ns.cloudflare.com",
+        port: 465,
+        secure: true, //true for 465, false for other ports
         // service: "Gmail",
         logger: true,
         debug: true,
-        secureConnection: false,
         auth: {
           user: "welcometeam@erinskyekelly.com", // generated ethereal user
           pass: "Welcome2021!!!", // generated ethereal password
         },
-        tls: {
-          // do not fail on invalid certs
-          rejectUnauthorized: false,
-        },
+        // tls: {
+        //   // do not fail on invalid certs
+        //   rejectUnauthorized: false,
+        // },
       });
 
       let details = {
