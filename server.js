@@ -21,10 +21,10 @@ app.post("/", async (req, res) => {
           user: "welcometeam@erinskyekelly.com", // generated ethereal user
           pass: "Welcome2021!!!", // generated ethereal password
         },
-        // tls: {
-        //   // do not fail on invalid certs
-        //   rejectUnauthorized: false,
-        // },
+        tls: {
+          // do not fail on invalid certs
+          rejectUnauthorized: false,
+        },
       });
 
       let details = {
