@@ -13,9 +13,9 @@ app.post("/", async (req, res) => {
     // let testAccount = await nodemailer.createTestAccount();
 
     let transporter = nodemailer.createTransport({
-        host: "coby.ns.cloudflare.com",
-        port: 465,
-        secure: true, //true for 465, false for other ports
+        host: "smtp.coby.ns.cloudflare.com",
+        port: 2525,
+        // secure: true, //true for 465, false for other ports
         // service: "Gmail",
         logger: true,
         debug: true,
