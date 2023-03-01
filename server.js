@@ -13,22 +13,26 @@ app.post("/", async (req, res) => {
     // let testAccount = await nodemailer.createTestAccount();
 
     let transporter = nodemailer.createTransport({
-        // host: "smtp.ethereal.email",
-        // port: 587,
-        // secure: false, // true for 465, false for other ports
-        service: "Gmail",
+        host: "coby.ns.cloudflare.com",
+        port: 587,
+        secure: false, //true for 465, false for other ports
+        // service: "Gmail",
         auth: {
-          user: "arpan.sharma26@gmail.com", // generated ethereal user
-          pass: "ywinqbpicsrybpgb", // generated ethereal password
+          user: "welcometeam@erinskyekelly.com", // generated ethereal user
+          pass: "Welcome2021!!!", // generated ethereal password
         },
+        // tls: {
+        //   // do not fail on invalid certs
+        //   rejectUnauthorized: false,
+        // },
       });
 
       let details = {
-        from: 'arpan.sharma26@gmail.com', // sender address
+        from: 'welcometeam@erinskyekelly.com', // sender address
         to: req.body.email, // list of receivers
         subject: "Test Email - Quiz Link", // Subject line
         text: `     Hi,
-                    We would like you to attempt this quiz - http://http://localhost:3000
+                    Your partner invited you to attempt this quiz - http://ec2-15-223-72-54.ca-central-1.compute.amazonaws.com:3000/
 
 
                     Thank you!
