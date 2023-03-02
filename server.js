@@ -9,19 +9,16 @@ let cors = require('cors');
 app.use(cors());
 
 app.post("/", async (req, res) => {
-
-    // let testAccount = await nodemailer.createTestAccount();
-
     let transporter = nodemailer.createTransport({
-        host: "smtp.coby.ns.cloudflare.com",
-        port: 2525,
+        // host: "smtp.coby.ns.cloudflare.com",
+        // port: 2525,
         // secure: true, //true for 465, false for other ports
-        // service: "Gmail",
+        service: "Gmail",
         logger: true,
         debug: true,
         auth: {
           user: "welcometeam@erinskyekelly.com", // generated ethereal user
-          pass: "Welcome2021!!!", // generated ethereal password
+          pass: "euehqepiirawueim", // generated ethereal password
         },
         // tls: {
         //   // do not fail on invalid certs
@@ -34,7 +31,7 @@ app.post("/", async (req, res) => {
         to: req.body.email, // list of receivers
         subject: "Test Email - Quiz Link", // Subject line
         text: `     Hi,
-                    Your partner invited you to attempt this quiz - http://ec2-15-223-72-54.ca-central-1.compute.amazonaws.com:3000/
+                    Your partner invited you to attempt this quiz - bit.ly/3ERI4Sw
 
 
                     Thank you!
