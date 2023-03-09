@@ -20,9 +20,6 @@ app.post("/", async (req, res) => {
         auth: {
           user: "welcometeam@erinskyekelly.com", // generated ethereal user
           pass: "euehqepiirawueim", // generated ethereal password
-
-          // user: "welcometeam@erinskyekelly.com", // generated ethereal user
-          // pass: "euehqepiirawueim", // generated ethereal password
         },
         tls: {
           // do not fail on invalid certs
@@ -40,15 +37,6 @@ app.post("/", async (req, res) => {
         // from: 'welcometeam@erinskyekelly.com', // sender address
         to: req.body.email, // list of receivers
         subject: "Your partner wants you to take the Naked Money Meetings online quiz", // Subject line
-        // text: `     Hi,
-        //             Your partner invited you to attempt this quiz - bit.ly/3ERI4Sw
-
-
-        //             Thank you!
-        // `, // plain text body
-
-  //       Your partner, _______, has sent you this email so you can discover your Money Block and find out the naked truth about why you are unconsciously sabotaging your ability to build wealth. 
-	// CLICK HERE to get started. 
 
         html: `<p>Your partner, <em><b>${req.body.firstname}</b></em><br/> <br/>
                                      has sent you this email so you can discover your Money Block and find out the naked truth about why you are unconsciously sabotaging your ability to build wealth. <a href='http://ec2-15-223-72-54.ca-central-1.compute.amazonaws.com:3000/'>CLICK HERE</a> to get started. </p>`, // html body
@@ -56,11 +44,14 @@ app.post("/", async (req, res) => {
 
       transporter.sendMail(details, (err) => {
         if(err) {
-            console.log(err);
+            // console.log(err);
+            res.send('error');
         }else{
-            console.log("email has been sent")
+            // console.log("email has been sent");
+            res.send('sent');
         }
       })
+      // return { "type": "success", "id": 5483 };
 })
 
 app.get("/send", (req, res) => {
