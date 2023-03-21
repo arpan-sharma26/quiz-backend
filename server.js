@@ -13,6 +13,7 @@ let cors = require('cors');
 app.use(cors());
 
 app.post("/", async (req, res) => {
+  try{
     let details;
 
     let blocks = {
@@ -143,7 +144,7 @@ app.post("/", async (req, res) => {
       <br/>
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
-      "The Guilt Block" : `<p>Hello <em><b>${req.body.firstname},</b></em><br/> <br/>
+      "The Money Guilt Block" : `<p>Hello <em><b>${req.body.firstname},</b></em><br/> <br/>
       Thank you for doing the Money Blocks Quiz. <br/> 
       <b>You are one of the kindest people on the planet. I know this because you have a Money Guilt Block</b>.<br/><br/>
       <b>It means you care deeply. And I love that about you!</b><br/><br/>
@@ -223,6 +224,9 @@ app.post("/", async (req, res) => {
             res.send('sent');
         }
       })
+  } catch(err){
+    console.log("Error Found -> ",err);
+  }
 })
 
 app.post("/savedata", async(req, res) => {
