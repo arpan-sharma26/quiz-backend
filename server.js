@@ -15,7 +15,7 @@ app.use(cors());
 app.post("/", async (req, res) => {
   try{
     let details;
-
+    let mailContent;
     let blocks = {
       "The Lack Block" : `<p>Hello <em><b>${req.body.firstname},</b></em><br/> <br/>
       Thank you for doing the Money Blocks Quiz. <br/> 
@@ -163,8 +163,9 @@ app.post("/", async (req, res) => {
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
     };
-
-    let mailContent = blocks[req.body.data[0]];
+    if(req.body.data != undefined) {
+      mailContent = blocks[req.body.data[0]];
+    }
 
     let transporter = nodemailer.createTransport({
         // host: "smtp.coby.ns.cloudflare.com",
