@@ -31,7 +31,7 @@ app.post("/", async (req, res) => {
       <li>And then we form a pattern by conditioning that meaning. At first, we do it to make sense of the world, or we do it for survival. But most of us end up conditioning (repeating) a pattern over and over again unconsciously that no longer serves us, and we end up feeling stuck.<br/></li><br/>
       
       It is possible to create new patterns by conditioning new beliefs and habits.<br/><br/>
-      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://www.amazon.com/Naked-Money-Meetings-Partner-Forever/dp/1637587791/ref=sr_1_1?crid=3NCT78ESEGHCS&keywords=naked+money+meetings+erin+skye+kelly&qid=1676239960&sprefix=naked+money+meetings+erin+skye+kelly%2Caps%2C114&sr=8-1'>Naked Money Meetings,</a> today.</b><br/>
+      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://amzn.to/3JRdtWT'>Naked Money Meetings,</a> today.</b><br/>
       <br/>
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
@@ -50,7 +50,7 @@ app.post("/", async (req, res) => {
       <li>And then we form a pattern by conditioning that meaning. At first, we do it to make sense of the world, or we do it for survival. But most of us end up conditioning (repeating) a pattern over and over again unconsciously that no longer serves us, and we end up feeling stuck.<br/></li><br/>
       
       It is possible to create new patterns by conditioning new beliefs and habits.<br/><br/>
-      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://www.amazon.com/Naked-Money-Meetings-Partner-Forever/dp/1637587791/ref=sr_1_1?crid=3NCT78ESEGHCS&keywords=naked+money+meetings+erin+skye+kelly&qid=1676239960&sprefix=naked+money+meetings+erin+skye+kelly%2Caps%2C114&sr=8-1'>Naked Money Meetings,</a> today.</b><br/>
+      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://amzn.to/3JRdtWT'>Naked Money Meetings,</a> today.</b><br/>
       <br/>
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
@@ -68,7 +68,7 @@ app.post("/", async (req, res) => {
       <li>And then we form a pattern by conditioning that meaning. At first, we do it to make sense of the world, or we do it for survival. But most of us end up conditioning (repeating) a pattern over and over again unconsciously that no longer serves us, and we end up feeling stuck.<br/></li><br/></span>
       
       It is possible to create new patterns by conditioning new beliefs and habits.<br/><br/>
-      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://www.amazon.com/Naked-Money-Meetings-Partner-Forever/dp/1637587791/ref=sr_1_1?crid=3NCT78ESEGHCS&keywords=naked+money+meetings+erin+skye+kelly&qid=1676239960&sprefix=naked+money+meetings+erin+skye+kelly%2Caps%2C114&sr=8-1'>Naked Money Meetings,</a> today.</b><br/>
+      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://amzn.to/3JRdtWT'>Naked Money Meetings,</a> today.</b><br/>
       <br/>
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
@@ -88,7 +88,7 @@ app.post("/", async (req, res) => {
       <li>And then we form a pattern by conditioning that meaning. At first, we do it to make sense of the world, or we do it for survival. But most of us end up conditioning (repeating) a pattern over and over again unconsciously that no longer serves us, and we end up feeling stuck.<br/></li><br/></span>
       
       It is possible to create new patterns by conditioning new beliefs and habits.<br/><br/>
-      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://www.amazon.com/Naked-Money-Meetings-Partner-Forever/dp/1637587791/ref=sr_1_1?crid=3NCT78ESEGHCS&keywords=naked+money+meetings+erin+skye+kelly&qid=1676239960&sprefix=naked+money+meetings+erin+skye+kelly%2Caps%2C114&sr=8-1'>Naked Money Meetings,</a> today.</b><br/>
+      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://amzn.to/3JRdtWT'>Naked Money Meetings,</a> today.</b><br/>
       <br/>
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
@@ -106,7 +106,7 @@ app.post("/", async (req, res) => {
       <li>And then we form a pattern by conditioning that meaning. At first, we do it to make sense of the world, or we do it for survival. But most of us end up conditioning (repeating) a pattern over and over again unconsciously that no longer serves us, and we end up feeling stuck.<br/></li><br/></span>
       
       It is possible to create new patterns by conditioning new beliefs and habits.<br/><br/>
-      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://www.amazon.com/Naked-Money-Meetings-Partner-Forever/dp/1637587791/ref=sr_1_1?crid=3NCT78ESEGHCS&keywords=naked+money+meetings+erin+skye+kelly&qid=1676239960&sprefix=naked+money+meetings+erin+skye+kelly%2Caps%2C114&sr=8-1'>Naked Money Meetings,</a> today.</b><br/>
+      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://amzn.to/3JRdtWT'>Naked Money Meetings,</a> today.</b><br/>
       <br/>
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
@@ -123,7 +123,7 @@ app.post("/", async (req, res) => {
       <li>And then we form a pattern by conditioning that meaning. At first, we do it to make sense of the world, or we do it for survival. But most of us end up conditioning (repeating) a pattern over and over again unconsciously that no longer serves us, and we end up feeling stuck.<br/></li><br/></span>
       
       It is possible to create new patterns by conditioning new beliefs and habits.<br/><br/>
-      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://www.amazon.com/Naked-Money-Meetings-Partner-Forever/dp/1637587791/ref=sr_1_1?crid=3NCT78ESEGHCS&keywords=naked+money+meetings+erin+skye+kelly&qid=1676239960&sprefix=naked+money+meetings+erin+skye+kelly%2Caps%2C114&sr=8-1'>Naked Money Meetings,</a> today.</b><br/>
+      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://amzn.to/3JRdtWT'>Naked Money Meetings,</a> today.</b><br/>
       <br/>
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
@@ -140,7 +140,7 @@ app.post("/", async (req, res) => {
       <li>And then we form a pattern by conditioning that meaning. At first, we do it to make sense of the world, or we do it for survival. But most of us end up conditioning (repeating) a pattern over and over again unconsciously that no longer serves us, and we end up feeling stuck.<br/></li><br/></span>
       
       It is possible to create new patterns by conditioning new beliefs and habits.<br/><br/>
-      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://www.amazon.com/Naked-Money-Meetings-Partner-Forever/dp/1637587791/ref=sr_1_1?crid=3NCT78ESEGHCS&keywords=naked+money+meetings+erin+skye+kelly&qid=1676239960&sprefix=naked+money+meetings+erin+skye+kelly%2Caps%2C114&sr=8-1'>Naked Money Meetings,</a> today.</b><br/>
+      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://amzn.to/3JRdtWT'>Naked Money Meetings,</a> today.</b><br/>
       <br/>
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
@@ -158,7 +158,7 @@ app.post("/", async (req, res) => {
       <li>And then we form a pattern by conditioning that meaning. At first, we do it to make sense of the world, or we do it for survival. But most of us end up conditioning (repeating) a pattern over and over again unconsciously that no longer serves us, and we end up feeling stuck.<br/></li><br/></span>
       
       It is possible to create new patterns by conditioning new beliefs and habits.<br/><br/>
-      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://www.amazon.com/Naked-Money-Meetings-Partner-Forever/dp/1637587791/ref=sr_1_1?crid=3NCT78ESEGHCS&keywords=naked+money+meetings+erin+skye+kelly&qid=1676239960&sprefix=naked+money+meetings+erin+skye+kelly%2Caps%2C114&sr=8-1'>Naked Money Meetings,</a> today.</b><br/>
+      <b>To learn more about your block, and how to heal it, order your copy of <a href='https://amzn.to/3JRdtWT'>Naked Money Meetings,</a> today.</b><br/>
       <br/>
       <b>Forward <a href='bit.ly/3ERI4Sw'>this link</a> to a friend so they can take the quiz, too!</b>
       </p>`,
