@@ -7,7 +7,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 const creds = require("./keys.json");
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 app.use(bodyParser.json());
 let cors = require('cors');
 app.use(cors());
