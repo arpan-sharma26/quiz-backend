@@ -213,7 +213,7 @@ app.post("/", async (req, res) => {
           subject: "Your partner wants you to take the Naked Money Meetings online quiz", // Subject line
   
           html: `<p>Your partner, <em><b>${req.body.firstname}</b></em><br/> <br/>
-                                       has sent you this email so you can discover your Money Block and find out the naked truth about why you are unconsciously sabotaging your ability to build wealth. <a href='http://ec2-15-223-72-54.ca-central-1.compute.amazonaws.com:3000/'>CLICK HERE</a> to get started. </p>`, // html body
+                                       has sent you this email so you can discover your Money Block and find out the naked truth about why you are unconsciously sabotaging your ability to build wealth. <a href='http://ec2-15-223-65-218.ca-central-1.compute.amazonaws.com:3000/'>CLICK HERE</a> to get started. </p>`, // html body
         };
       }
       
