@@ -2,19 +2,20 @@ const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-
+let cors = require('cors');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
-
+const sendgrideMail = require('@sendgrid/mail')
 const creds = require("./keys.json");
+const dotenvData = require('dotenv').config()
 
 const PORT = 5000;
 app.use(bodyParser.json());
-let cors = require('cors');
+
 app.use(cors());
 
 app.post("/", async (req, res) => {
   try{
-    let details;
+    // let details;
     let mailContent;
     let blocks = {
       "The Lack Block" : `<p>Hello <em><b>${req.body.firstname},</b></em><br/> <br/>
@@ -167,66 +168,73 @@ app.post("/", async (req, res) => {
       mailContent = blocks[req.body.data[0]];
     }
 
-    let transporter = nodemailer.createTransport({
-        // host: "smtp.coby.ns.cloudflare.com",
-        // port: 2525,
-        // secure: true, //true for 465, false for other ports
-        // euehqepiirawueim
-        service: "Gmail",
-        logger: true,
-        debug: true,
-        auth: {
-          user: "welcometeam@erinskyekelly.com", // generated ethereal user
-          pass: "euehqepiirawueim", // generated ethereal password
-        },
-        tls: {
-          // do not fail on invalid certs
-          rejectUnauthorized: false,
-        },
-      });
-
-      if(req.body.result){
-        details = {
-          headers: {
-            "x-priority": "1",
-            "x-msmail-priority": "High",
-            importance: "high"
-        },
-          from: 'welcometeam@erinskyekelly.com', // sender address
-          // from: 'welcometeam@erinskyekelly.com', // sender address
-          to: req.body.userEmail, // list of receivers
-          subject: "Your result for the Naked Money Meetings online quiz", // Subject line
-
-          html: mailContent, // html body
-        };
-      }
-      else{
-        details = {
-          headers: {
-            "x-priority": "1",
-            "x-msmail-priority": "High",
-            importance: "high"
-        },
-          from: 'welcometeam@erinskyekelly.com', // sender address
-          // from: 'welcometeam@erinskyekelly.com', // sender address
-          to: req.body.email, // list of receivers
-          subject: "Your partner wants you to take the Naked Money Meetings online quiz", // Subject line
   
-          html: `<p>Your partner, <em><b>${req.body.firstname}</b></em><br/> <br/>
-                                       has sent you this email so you can discover your Money Block and find out the naked truth about why you are unconsciously sabotaging your ability to build wealth. <a href='http://ec2-15-223-65-218.ca-central-1.compute.amazonaws.com:3000/'>CLICK HERE</a> to get started. </p>`, // html body
-        };
-      }
+    sendgrideMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+    sendgrideMail.client.defaultHeaders.priority = "Urgent";
+    sendgrideMail.client.defaultHeaders.importance = "High";
+
+    let msg = {};
+
+    if(req.body.result){
+      msg = {
+        from: 'welcometeam@erinskyekelly.com', // sender address
+        // from: 'welcometeam@erinskyekelly.com', // sender address
+        to: req.body.userEmail, // list of receivers
+        subject: "Your result for the Naked Money Meetings online quiz", // Subject line
+        // text: 'Test Email',
+        html: mailContent, // html body
+      };
+    }else{
+      msg = {
+        from: 'welcometeam@erinskyekelly.com', // sender address
+        // from: 'welcometeam@erinskyekelly.com', // sender address
+        to: req.body.email, // list of receivers
+        subject: "Your partner wants you to take the Naked Money Meetings online quiz", // Subject line
+        html: `<p>Your partner, <em><b>${req.body.firstname}</b></em><br/> <br/>
+                                     has sent you this email so you can discover your Money Block and find out the naked truth about why you are unconsciously sabotaging your ability to build wealth. <a href='http://ec2-15-223-65-218.ca-central-1.compute.amazonaws.com:3000/'>CLICK HERE</a> to get started. </p>`, // html body
+      };
+    }
+
+    sendgrideMail.send(msg).then(() => {
+      let timestamp = Date(Date.now());
+      newTimestamp = timestamp.toString()
+        console.log(`Email sent successfully at - ${newTimestamp}`)
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+
+    // let transporter = nodemailer.createTransport({
+    //     // host: "smtp.coby.ns.cloudflare.com",
+    //     // port: 2525,
+    //     // secure: true, //true for 465, false for other ports
+    //     // euehqepiirawueim
+    //     service: "Gmail",
+    //     logger: true,
+    //     debug: true,
+    //     auth: {
+    //       user: "welcometeam@erinskyekelly.com", // generated ethereal user
+    //       pass: "euehqepiirawueim", // generated ethereal password
+    //     },
+    //     tls: {
+    //       // do not fail on invalid certs
+    //       rejectUnauthorized: false,
+    //     },
+    //   });
       
 
-      transporter.sendMail(details, (err) => {
-        if(err) {
-            res.send('error');
-        }else{
-            res.send('sent');
-        }
-      })
+      // transporter.sendMail(details, (err) => {
+      //   if(err) {
+      //       res.send('error');
+      //   }else{
+      //       res.send('sent');
+      //   }
+      // })
+      res.send("Success");
   } catch(err){
     console.log("Error Found -> ",err);
+    res.send("Error");
   }
 })
 
@@ -256,8 +264,8 @@ app.post("/savedata", async(req, res) => {
     email: data.email,
     result: concatData,
   }
-
   sheet.addRow(saveData);
+  res.send("Success");
 });
 
 app.listen(PORT, () => {
